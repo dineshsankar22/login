@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<h2>HTML Forms</h2>
+	<form name="register" id="register" method="POST">
+		First name:<br> <input type="text" name="firstName" value="">
+		<br> Last name:<br> <input type="text" name="lastName"
+			value=""> <br>
+		<br> <input type="Submit" name="submit" id="submit">
+	</form>
+	<div id="rgstr" name="rgstr"></div>
+	<div id="fullnm" name="fullnm"></div>
+</body>
+
+<script>
+	// this is the id of the form
+
+	$("#register").submit(function(e) {
+
+		e.preventDefault(); // avoid to execute the actual submit of the form.
+
+		var form = $(this);
+
+		var url = "/bin/formdata";
+
+		$.ajax({
+
+			type : "POST",
+
+			url : url,
+
+			data : form.serialize(), // serializes the form's elements.
+
+			success : function(data, textStatus, jqXHR) {
+				//write your logic that you need to perform on sucess
+				console.log(data.firstname);
+				alert(data.firstname + data.lastname);
+				$('#rgstr').html(textStatus);
+				$('#fullnm').html(data.firstname + "" + data.lastname);
+				return false;
+			},
+			error : function(XMLHttpRequest, textStatus, errorThrown) {
+				//write your logic that you need to perform on error
+			}
+
+		});
+
+	});
+</script>
+
+</html>
+
