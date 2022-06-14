@@ -2,5 +2,6 @@
 
 <workspaceFilter version="1.0">
     <filter root="/apps/training" />
-    <filter root="/apps/dinesh" />
+    <filter root="/apps/sling" />
+    <filter root="/etc/designs/training" />
 </workspaceFilter>

@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1655054004196
+Bnd-LastModified: 1655188297712
 Build-Jdk: 1.8.0_281
 Built-By: DineshKumarJ
 Bundle-Description: Core bundle for training
@@ -8,14 +8,13 @@ Bundle-Name: training - Core
 Bundle-SymbolicName: training.core
 Bundle-Version: 1.0.0
 Created-By: Apache Maven Bundle Plugin
-Export-Package: training.core;version="1.0",training.core.filters;versio
- n="1.0.0";uses:="javax.servlet",training.core.listeners;version="1.0.0"
- ;uses:="org.osgi.service.event",training.core.models;version="1.0.0";us
- es:="javax.annotation,javax.inject,org.apache.sling.api.resource,org.ap
- ache.sling.models.annotations",training.core.schedulers;version="1.0.0"
- ,training.core.service;version="1.0.0",training.core.servlets;version="
- 1.0.0";uses:="javax.servlet,org.apache.sling.api,org.apache.sling.api.s
- ervlets"
+Export-Package: training.core.filters;version="1.0.0";uses:="javax.servl
+ et",training.core.listeners;version="1.0.0";uses:="org.osgi.service.eve
+ nt",training.core.models;version="1.0.0";uses:="javax.annotation,javax.
+ inject,org.apache.sling.api.resource,org.apache.sling.models.annotation
+ s",training.core;version="1.0",training.core.schedulers;version="1.0.0"
+ ,training.core.servlets;version="1.0.0";uses:="javax.servlet,org.apache
+ .sling.api,org.apache.sling.api.servlets"
 Import-Package: javax.inject;version="0.0.0",javax.annotation,javax.serv
  let,org.apache.sling.api;version="[2.3,3)",org.apache.sling.api.request
  ;version="[2.4,3)",org.apache.sling.api.resource;version="[2.9,3)",org.
@@ -33,6 +32,6 @@ Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
 Service-Component: OSGI-INF/training.core.filters.LoggingFilter.xml,OSGI
  -INF/training.core.listeners.SimpleResourceListener.xml,OSGI-INF/traini
  ng.core.schedulers.SimpleScheduledTask.xml,OSGI-INF/training.core.servl
- ets.ABCPostServlet.xml,OSGI-INF/training.core.servlets.UserLogin.xml
+ ets.SimpleServlet.xml,OSGI-INF/training.core.servlets.UserLogin.xml
 Sling-Model-Packages: training.core
 Tool: Bnd-3.3.0.201609221906

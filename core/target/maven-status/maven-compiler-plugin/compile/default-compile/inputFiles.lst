@@ -1,11 +1,8 @@
 D:\AEM\AEM Files\training\training\core\src\main\java\training\core\servlets\ValidateUser.java
 D:\AEM\AEM Files\training\training\core\src\main\java\training\core\listeners\SimpleResourceListener.java
-D:\AEM\AEM Files\training\training\core\src\main\java\training\core\Mytest.java
-D:\AEM\AEM Files\training\training\core\src\main\java\training\core\currentDateTime.java
 D:\AEM\AEM Files\training\training\core\src\main\java\training\core\filters\LoggingFilter.java
+D:\AEM\AEM Files\training\training\core\src\main\java\training\core\servlets\SimpleServlet.java
 D:\AEM\AEM Files\training\training\core\src\main\java\training\core\models\HelloWorldModel.java
-D:\AEM\AEM Files\training\training\core\src\main\java\training\core\servlets\ABCPostServlet.java
 D:\AEM\AEM Files\training\training\core\src\main\java\training\core\servlets\UserLogin.java
 D:\AEM\AEM Files\training\training\core\src\main\java\training\core\schedulers\SimpleScheduledTask.java
-D:\AEM\AEM Files\training\training\core\src\main\java\training\core\service\LoginService.java
 D:\AEM\AEM Files\training\training\core\src\main\java\training\core\package-info.java
